@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS TASK6</title>
+        <style>
+            img{
+                margin-left: 120px;
+                width: 200px;
+                border-radius: 50%;
+                text-align: center;
+            }
+            #outer{
+                margin: auto;
+                width: 600px;
+            }
+            #inner{
+                display: flex;
+                background-color: rgb(175, 174, 174);
+                width: 420px;
+                margin-top: 15px;
+                height: 50px;
+            }
+            button{
+                border-radius: 5px;
+                width: 80px;
+                background-color: red;
+                color: white;
+                height: 35px;
+                margin-top: 10px;
+                margin-right: 220px;
+            }
+            .label1{
+                width: 410px;
+                height: 23px;
+            }
+            #submit{
+                display: block;
+                background-color: green;
+                height: 30px;
+                width: 420px;
+                color: white;
+            }
+            a{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <img src="profile.webp" alt="strawberry">
+            <form action="">
+                <b><label for="name">Username</label></b><br>
+                <input type="text" id="name" class="label1" placeholder="Enter Username"><br><br>
+                <b><label for="password">Password</label></b><br>
+                <input type="password" id="password" class="label1" placeholder="Enter Password" ><br><br>
+                <input type="submit" id="submit" value="Login"><br>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree"> Remember me</label>
+                <div id="inner">
+                <button>Cancel</button><p>Forgot <a href="#">password?</a></p>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
